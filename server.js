@@ -61,6 +61,10 @@ app.get('/', function (req, res) {
     res.render('index.html',{message:message,ts:ts});
 });
 
+app.get('/data', function (req, res) {
+    res.render('data.html',{message:message,ts:ts});
+});
+
 app.listen(80, function () { 
     console.log("server is running at localhost:80");
 })
